@@ -1,0 +1,108 @@
+
+.mainAuth{
+    background-color: rgb(27, 27, 27);
+    margin-top: 5%;
+    width: 400px;
+    height: 450px;
+    border:10px solid rgb(27, 27, 27);
+    border-radius: 10px;
+}
+.mainReg{
+    background-color: rgb(27, 27, 27);
+    margin-top: 5%;
+    padding: auto;
+    width: 400px;
+    border:10px solid rgb(27, 27, 27);
+    border-radius: 10px;
+}
+
+section{
+    background-color: rgb(27, 27, 27);
+    padding-top: 5%;
+}
+.centerBlock{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#submit{
+    height: 56px;
+    width: 70%;
+    font-family: YS Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: none;
+    font-size: larger;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#submit:not(.smarthome-button) {
+    background-color: rgb(255, 255, 255);
+}
+
+.section_reg, .section_authoriz p{
+    font-family: YS Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+.section_authoriz input{
+    height: 46px;
+    width: 70%;
+    font-size: 24px;
+    border-width: 2px;
+    border: solid transparent;
+    border-radius: 10px;
+}
+.section_reg input{
+    height: 35px;
+    width: 70%;
+    font-size: 16px;
+    border-width: 2px;
+    border: solid transparent;
+    border-radius: 10px;
+}
+p1 {
+    font-family: YS Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: aliceblue;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 28%;
+}
+
+img{
+    object-fit: fill;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+#auth-reg{
+    padding: 20px;
+}
+
+#href-reg{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.support_msg {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(214, 30, 30);
+}	
+  a#auth-reg {
+    text-decoration: none;
+    color: rgb(172, 161, 161);
+  }
+  a#auth-reg:hover {
+    color: rgb(221, 221, 221);
+  }

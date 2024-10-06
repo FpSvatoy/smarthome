@@ -1,0 +1,370 @@
+
+/* --- General styles --- */
+:root {
+
+	--header-height: 101px;
+
+}
+
+body { 
+	height: 100%; 
+	margin: 0;
+	padding: 0;  
+	font-size: 16px;
+	font-family: "Anonymous Pro";
+}
+
+h1, h2, h3 {
+	font-family: Impact;
+	color: #505050;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+th {
+	padding: 1rem;
+	border-width: 1px 0;
+	border-style: dotted;
+	font-weight: bold;
+	background: lightcoral;  
+	color: wheat;
+	text-shadow: 1px 1px brown;
+}
+
+tr, td, th {
+	text-align: center;
+}
+
+td {
+	padding: 1rem;
+	text-transform: lowercase;
+}
+
+tr:nth-of-type(2n) > td {
+	border-style: dotted;
+	border-width: 1px 0;
+	background: cornsilk;
+}
+
+.smarthome-button {
+	display: block;
+	text-decoration: none;
+	padding: 0.75em;
+	border-radius: 0.35em;
+	margin: 0.5em;
+	border: 1px solid lightcoral !important;
+	color: lightcoral;
+	background: transparent;
+}
+
+.smarthome-button:hover {
+	background-color: lightcoral;  
+	color: wheat;
+	text-shadow: 1px 1px brown;
+}
+
+.error-message, .success-message {
+	padding: 1em;
+	display: block;
+	max-width: 50%;
+	margin: 2em auto;
+	text-align: center;
+  }
+  .error-message {
+	background-color: pink;
+  }
+  .success-message {
+	background-color: lightgreen;
+  }
+
+/* --- Header --- */
+
+header {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	border-style: double;
+	border-width: 3px 0;
+}
+
+header .logo {
+	margin: 0;
+	width: 16.66%;
+	background: #1c1b19;
+	display: flex;
+}
+
+header .logo img {
+	margin: 0 auto;
+}
+
+header h1 {  
+	margin: 0;
+	padding: 3px; 
+	border-bottom: 1px solid darkgray;
+}
+
+header div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header .status {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	width: 16.66%;
+}
+
+header .status p {
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 0.5em;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+/* --- general styles --- */
+
+.wrapperOneBlock {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+}
+
+.content {
+	/*! height: 100%; */
+    padding:15px;
+	/*! display: block; */
+	/*margin: 15px;*/
+    background: #fff;
+    min-height: calc(100vh - var(--header-height) - 30px); /*30px = x2 body padding*/
+}
+
+/* --- Sidebar --- */
+.sidebar {
+	text-align: center;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 1em;
+}
+
+.sidebar li {
+	list-style: none;
+}
+
+.sidebar a {
+	display: block;
+	text-decoration: none;
+	padding: 0.75em;
+	color: black;
+	border-radius: 0.35em;
+	margin: 0.5em;
+	border: 1px solid lightcoral;  
+	color: lightcoral;  
+  }
+
+.sidebar a:hover {
+	background-color: lightcoral;  
+	color: wheat;
+	text-shadow: 1px 1px brown;
+}
+
+/* --- Generic forms --- */
+
+form input[type="text"], form input[type="password"] {
+	padding: 0.5em;
+	outline: none;
+	font-size: 16px;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+	border: 2px dashed gray;
+	background-color: lightyellow;
+}
+
+/* --- Single forms (the form is the only page conent) --- */
+.single-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.single-form p {
+	display: block;
+	min-width: 300px;
+	max-width: 33.33%;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 1em;
+}
+
+.single-form p, .single-form #submit {
+	display: block;
+	min-width: 200px;
+	width: 33.33%;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.single-form input[type="text"],
+.single-form input[type="password"]  {
+	width: 100%;
+}
+
+.single-form .form-fields-inline {
+	text-align: left;
+}
+
+/* table capability */
+
+.tableCapability {
+	max-width: 1200px;
+	min-width: 600px;
+	width: 80%;
+	margin: 0 auto;
+  }
+  
+  .tableCapability th {
+	padding: 1rem;
+	border-width: 1px 0;
+	border-style: dotted;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: lightsteelblue;
+  }
+  
+  .tableCapability tr {
+	text-align: center;
+  }
+
+  .tableCapability td {
+	padding: 1rem;
+	text-transform: lowercase;
+  }
+
+  .tableCapability tr:nth-of-type(2n) > td {
+	border-style: dotted;
+	border-width: 1px 0;
+	background: lightyellow;
+  }
+
+  /* Devices grid */
+
+  .device-list {  
+	display: flex;
+	flex-direction: column;
+  }
+
+  .single-device {
+	display: flex;
+	align-items: center;  
+	padding: 1em;
+  }
+
+  .device-status {
+	flex-grow: 2;
+	max-width: 75%;
+	border: 1px dotted;
+  }
+
+  .device-status * {  
+	border-style: none !important;
+  }
+  
+  .device-tile {
+	border-radius: 15px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;  
+	flex-grow: 1;
+	width: 25%;
+  }
+  
+  .device-label {
+	font-weight: bold;
+	font-family: initial;
+	background-color: lightcoral;
+	padding: 0.25rem;
+	border-radius: 0.5em 0 0 0.5em;
+	color: wheat;
+	text-shadow: 1px 1px brown;
+	position: relative;
+	border-top: 1px dotted black;
+	border-left: 1px dotted black;
+	border-bottom: 1px dotted black;
+	display: inline-block;
+  }
+
+  .device-name {
+	text-transform: uppercase;
+	background: cornsilk;
+	padding: 0.25rem 0.5em;
+	border-top: 1px dotted;
+	border-right: 1px dotted;
+	border-bottom: 1px dotted;
+	border-radius: 0 0.5em 0.5em 0;
+	box-sizing: border-box;
+	margin-left: -0.75em;
+	display: inline-block;
+	overflow: clip;
+	white-space: nowrap;
+	min-width: 120px;
+  }
+
+  .pretty-device-title {
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .device-icon {
+	margin: 0 auto !important;
+	width: 128px;
+	height: 128px;
+	margin: 1rem;
+  }
+
+.device-tile .smarthome-button {
+  max-width: fit-content;
+  padding: 0.25em 2em;
+  margin: 0.5em auto;
+}
+
+.inactive-menu-item {
+	color: gray !important;
+	background-color: lightgray !important;
+	border-color: gray !important;
+	text-shadow: none !important;
+  }
+
+.device-info img {
+	width: 256px;
+	height: auto;
+	object-fit: contain;
+}
+
+.device-info .device-quickstatus {
+	display: flex;
+	justify-content: space-around;
+	padding: 2em 0;
+  }
+
+  .device-field > h2 {
+	padding: 1rem;
+	background-color: lightblue;
+	margin: 0;
+  }
